@@ -1,0 +1,15 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675"><stop stop-color="#061225"/><stop offset="1" stop-color="#2A1241"/></linearGradient><linearGradient id="line" x1="120" y1="0" x2="1080" y2="0"><stop stop-color="#53A2FF"/><stop offset=".5" stop-color="#8B7BFF"/><stop offset="1" stop-color="#F26DBA"/></linearGradient></defs>
+  <rect width="1200" height="675" rx="42" fill="url(#bg)"/>
+  <circle cx="950" cy="125" r="260" fill="#7C3AED" opacity=".18"/><circle cx="170" cy="535" r="225" fill="#2563EB" opacity=".15"/>
+  <text x="72" y="104" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800">PostgreSQL to SFTP Export Pipeline</text>
+  <text x="72" y="150" fill="#93C5FD" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">APP CHANGES • POSTGRES • MAGEAI • CSV • SFTP</text>
+  <path d="M126 342H1074" stroke="url(#line)" stroke-width="6" stroke-linecap="round" opacity=".75"/>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800" text-anchor="middle">
+    <g transform="translate(110 286)"><rect width="152" height="112" rx="28" fill="#102040" stroke="#60A5FA" stroke-opacity=".55"/><path d="M42 78V34h68v44H42ZM56 92h40" stroke="#93C5FD" stroke-width="6" fill="none" stroke-linecap="round"/><text x="76" y="150" fill="#EAF3FF" font-size="25">Application</text></g>
+    <g transform="translate(324 286)"><rect width="152" height="112" rx="28" fill="#102040" stroke="#60A5FA" stroke-opacity=".55"/><ellipse cx="76" cy="40" rx="39" ry="14" stroke="#93C5FD" stroke-width="6"/><path d="M37 40v42c0 8 17 14 39 14s39-6 39-14V40M37 61c0 8 17 14 39 14s39-6 39-14" stroke="#93C5FD" stroke-width="6"/><text x="76" y="150" fill="#EAF3FF" font-size="25">Postgres</text></g>
+    <g transform="translate(538 286)"><rect width="152" height="112" rx="28" fill="#171F45" stroke="#8B7BFF" stroke-opacity=".65"/><path d="M46 82 76 30l30 52H46Z" stroke="#B7B5FF" stroke-width="6" fill="none"/><text x="76" y="150" fill="#EAF3FF" font-size="25">MageAI</text></g>
+    <g transform="translate(752 286)"><rect width="152" height="112" rx="28" fill="#12223F" stroke="#60A5FA" stroke-opacity=".55"/><path d="M56 28h42l18 18v38H56V28ZM98 28v19h18" stroke="#93C5FD" stroke-width="6" fill="none" stroke-linejoin="round"/><text x="76" y="150" fill="#EAF3FF" font-size="25">CSV</text></g>
+    <g transform="translate(966 286)"><rect width="152" height="112" rx="28" fill="#261936" stroke="#F26DBA" stroke-opacity=".6"/><path d="M38 80h76V42H96V28H56v14H38v38Z" stroke="#F9A8D4" stroke-width="6" fill="none" stroke-linejoin="round"/><text x="76" y="150" fill="#EAF3FF" font-size="25">SFTP</text></g>
+  </g>
+</svg>

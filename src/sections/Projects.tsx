@@ -1,10 +1,17 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
 import { projects } from "../data/projects";
 
 const Projects = () => {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
+  const visibleProjects = showAllProjects
+    ? projects
+    : projects.slice(0, 6);
+
   return (
     <section
       id="projects"
@@ -78,10 +85,11 @@ const Projects = () => {
               text-base
             "
           >
-            A collection of AI systems,
-            data engineering workflows,
-            analytics platforms,
-            and scalable backend solutions.
+            A collection of Data Engineering
+            projects, production-inspired ETL
+            workflows, scalable backend and
+            full-stack applications, and
+            AI-powered solutions.
           </p>
         </motion.div>
 
@@ -96,7 +104,7 @@ const Projects = () => {
             gap-6
           "
         >
-          {projects.map((project, index) => (
+          {visibleProjects.map((project, index) => (
             <motion.div
               key={project.title}
               initial={{
@@ -202,47 +210,53 @@ const Projects = () => {
 
                 {/* LINKS */}
 
-                <div
-                  className="
-                    flex
-                    items-center
-                    gap-5
-                    mt-6
-                    text-sm
-                  "
-                >
-                  <a
-                    href={project.github}
-                    target="_blank"
+                {(project.github || project.live) && (
+                  <div
                     className="
                       flex
                       items-center
-                      gap-2
-                      hover:text-blue-400
-                      transition
+                      gap-5
+                      mt-6
+                      text-sm
                     "
                   >
-                    <FaGithub />
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        className="
+                          flex
+                          items-center
+                          gap-2
+                          hover:text-blue-400
+                          transition
+                        "
+                      >
+                        <FaGithub />
 
-                    GitHub
-                  </a>
+                        GitHub
+                      </a>
+                    )}
 
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    className="
-                      flex
-                      items-center
-                      gap-2
-                      hover:text-blue-400
-                      transition
-                    "
-                  >
-                    <FiExternalLink />
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        className="
+                          flex
+                          items-center
+                          gap-2
+                          hover:text-blue-400
+                          transition
+                        "
+                      >
+                        <FiExternalLink />
 
-                    Live Demo
-                  </a>
-                </div>
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
 
               {/* HOVER GRADIENT */}
@@ -264,6 +278,32 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+
+        {projects.length > 6 && (
+          <div className="mt-12 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAllProjects((current) => !current)}
+              className="
+                rounded-xl
+                border
+                border-blue-400/30
+                bg-blue-500/10
+                px-7
+                py-3
+                text-sm
+                font-semibold
+                text-blue-200
+                transition
+                hover:-translate-y-1
+                hover:border-blue-300/60
+                hover:bg-blue-500/20
+              "
+            >
+              {showAllProjects ? "Show Less" : "More Projects"}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

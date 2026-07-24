@@ -1,0 +1,65 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#061225"/>
+      <stop offset="0.55" stop-color="#111832"/>
+      <stop offset="1" stop-color="#2A1241"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#53A2FF"/>
+      <stop offset="0.55" stop-color="#8B7BFF"/>
+      <stop offset="1" stop-color="#F26DBA"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.27 0 0 0 0 0.56 0 0 0 0 1 0 0 0 0.75 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" rx="42" fill="url(#bg)"/>
+  <circle cx="1015" cy="120" r="220" fill="#7C3AED" opacity="0.18"/>
+  <circle cx="175" cy="560" r="200" fill="#2563EB" opacity="0.18"/>
+  <text x="72" y="104" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800">SFTP Batch Ingestion Pipeline</text>
+  <text x="72" y="150" fill="#93C5FD" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4">CSV • CDC • RETRY • DLQ • POSTGRES • APP</text>
+  <path d="M144 342H1056" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800" text-anchor="middle">
+    <g transform="translate(138 302)">
+      <rect width="132" height="80" rx="24" fill="#12223F" stroke="#60A5FA" stroke-opacity="0.5"/>
+      <path d="M45 20h32l16 16v26H45V20Z" stroke="#93C5FD" stroke-width="5" fill="none"/>
+      <path d="M77 20v17h16" stroke="#93C5FD" stroke-width="5"/>
+      <text x="66" y="118" fill="#DCEBFF" font-size="23">CSV</text>
+    </g>
+    <g transform="translate(312 302)">
+      <rect width="132" height="80" rx="24" fill="#12223F" stroke="#60A5FA" stroke-opacity="0.5"/>
+      <path d="M39 42c18-32 36-32 54 0M39 42c18 32 36 32 54 0" stroke="#93C5FD" stroke-width="5" fill="none"/>
+      <text x="66" y="118" fill="#DCEBFF" font-size="23">Transform</text>
+    </g>
+    <g transform="translate(486 302)">
+      <rect width="132" height="80" rx="24" fill="#142345" stroke="#8B7BFF" stroke-opacity="0.65"/>
+      <path d="M38 43h56M66 19v48M44 29l22-10 22 10M44 57l22 10 22-10" stroke="#B7B5FF" stroke-width="5" stroke-linecap="round"/>
+      <text x="66" y="118" fill="#DCEBFF" font-size="23">CDC</text>
+    </g>
+    <g transform="translate(660 302)">
+      <rect width="132" height="80" rx="24" fill="#261936" stroke="#F26DBA" stroke-opacity="0.55"/>
+      <path d="M42 40c0-14 11-25 25-25s25 11 25 25-11 25-25 25H50" stroke="#F9A8D4" stroke-width="5" fill="none"/>
+      <path d="M50 50 38 63l12 12" stroke="#F9A8D4" stroke-width="5" fill="none"/>
+      <text x="66" y="118" fill="#DCEBFF" font-size="23">Retry</text>
+    </g>
+    <g transform="translate(834 302)">
+      <rect width="132" height="80" rx="24" fill="#261936" stroke="#F26DBA" stroke-opacity="0.55"/>
+      <path d="M35 29h62v39H35zM35 29l31 24 31-24" stroke="#F9A8D4" stroke-width="5" fill="none"/>
+      <text x="66" y="118" fill="#DCEBFF" font-size="23">DLQ</text>
+    </g>
+    <g transform="translate(1008 302)">
+      <rect width="132" height="80" rx="24" fill="#12223F" stroke="#60A5FA" stroke-opacity="0.5"/>
+      <ellipse cx="66" cy="27" rx="34" ry="13" stroke="#93C5FD" stroke-width="5"/>
+      <path d="M32 27v34c0 7 15 13 34 13s34-6 34-13V27M32 44c0 7 15 13 34 13s34-6 34-13" stroke="#93C5FD" stroke-width="5" fill="none"/>
+      <text x="66" y="118" fill="#DCEBFF" font-size="23">Postgres</text>
+    </g>
+  </g>
+  <g transform="translate(865 503)" filter="url(#glow)">
+    <rect width="230" height="82" rx="26" fill="#08111F" stroke="#60A5FA" stroke-opacity="0.45"/>
+    <path d="M42 56V30M85 56V42M128 56V22M171 56V36" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/>
+    <text x="115" y="42" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" text-anchor="middle">Application View</text>
+  </g>
+</svg>
