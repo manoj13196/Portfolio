@@ -20,11 +20,11 @@ function App() {
 
       <About />
 
+      <Experience />
+
       <Projects />
 
       <Skills />
-
-      <Experience />
 
       <Contact />
 

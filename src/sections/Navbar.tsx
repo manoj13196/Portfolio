@@ -58,6 +58,13 @@ const Navbar = () => {
             </a>
 
             <a
+                href="#experience"
+                className="hover:text-white transition"
+            >
+                Experience
+            </a>
+
+            <a
                 href="#projects"
                 className="hover:text-white transition"
             >
@@ -69,15 +76,6 @@ const Navbar = () => {
                 className="hover:text-white transition"
             >
                 Skills
-            </a>
-
-            
-
-            <a
-                href="#experience"
-                className="hover:text-white transition"
-            >
-                Experience
             </a>
 
             <a

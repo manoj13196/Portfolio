@@ -16,8 +16,8 @@ const About = () => {
           mx-auto
           grid
           md:grid-cols-2
-          gap-12
-          items-center
+          gap-14
+          items-start
         "
       >
         {/* LEFT */}
@@ -43,25 +43,28 @@ const About = () => {
           <h2
             className="
               text-3xl
-              md:text-4xl
+              md:text-[2.25rem]
               font-black
-              leading-tight
+              leading-[1.12]
+              max-w-2xl
             "
           >
             Building Modern
+            <br />
             <span className="gradient-text">
-              {" "}
               Data & Backend
             </span>
+            <br />
             Systems
           </h2>
 
           <p
             className="
-              mt-6
+              mt-5
               text-gray-400
               text-base
               leading-relaxed
+              max-w-2xl
             "
           >
             I'm a Software Developer with hands-on
@@ -72,10 +75,11 @@ const About = () => {
 
           <p
             className="
-              mt-6
+              mt-5
               text-gray-400
               text-base
               leading-relaxed
+              max-w-2xl
             "
           >
             I design scalable data integration
@@ -87,7 +91,7 @@ const About = () => {
 
           <div
             className="
-              mt-8
+              mt-6
               grid
               grid-cols-2
               gap-6
@@ -152,6 +156,7 @@ const About = () => {
           viewport={{ once: true }}
           className="
             relative
+            pt-8
           "
         >
           <div
