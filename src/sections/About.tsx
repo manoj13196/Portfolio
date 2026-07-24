@@ -51,7 +51,7 @@ const About = () => {
             Building Modern
             <span className="gradient-text">
               {" "}
-              Data & AI
+              Data & Backend
             </span>
             Systems
           </h2>
@@ -64,10 +64,10 @@ const About = () => {
               leading-relaxed
             "
           >
-            I’m a Data Engineer focused on
-            scalable pipelines, backend
-            systems, AI-powered analytics,
-            and intelligent workflows.
+            I'm a Software Developer with hands-on
+            experience in backend development and
+            production-grade ETL pipelines using
+            Python, SQL, PostgreSQL, MageAI, and DLT Hub.
           </p>
 
           <p
@@ -78,11 +78,11 @@ const About = () => {
               leading-relaxed
             "
           >
-            I work with modern technologies
-            like PySpark, DLT Hub, MageAI,
-            PostgreSQL, ClickHouse, and LLMs
-            to build high-performance data
-            platforms and analytics systems.
+            I design scalable data integration
+            solutions, API workflows, CDC-based
+            incremental processing, SCD Type 2
+            versioning, validation systems, and
+            AI-powered automation.
           </p>
 
           <div
@@ -109,11 +109,11 @@ const About = () => {
                   gradient-text
                 "
               >
-                2+
+                50K+
               </h3>
 
               <p className="mt-2 text-gray-400">
-                Years Experience
+                Records Weekly
               </p>
             </div>
 
@@ -133,11 +133,11 @@ const About = () => {
                   gradient-text
                 "
               >
-                25+
+                10+
               </h3>
 
               <p className="mt-2 text-gray-400">
-                Projects Built
+                ETL Pipelines
               </p>
             </div>
           </div>
@@ -193,21 +193,9 @@ const About = () => {
                 </h4>
 
                 <p className="text-gray-400 mt-2">
-                  ETL pipelines, orchestration,
-                  incremental loading, and
-                  scalable architectures.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="font-semibold text-lg">
-                  AI Analytics
-                </h4>
-
-                <p className="text-gray-400 mt-2">
-                  LLM-powered dashboards,
-                  NL-to-SQL systems,
-                  and intelligent reporting.
+                  ETL/ELT pipelines, CDC, SCD Type 2,
+                  incremental loading, schema evolution,
+                  and data validation.
                 </p>
               </div>
 
@@ -217,9 +205,21 @@ const About = () => {
                 </h4>
 
                 <p className="text-gray-400 mt-2">
-                  APIs, data services,
-                  integrations,
-                  and workflow automation.
+                  REST APIs, authentication, platform
+                  integrations, TypeORM workflows, and
+                  service automation.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-lg">
+                  AI & Automation
+                </h4>
+
+                <p className="text-gray-400 mt-2">
+                  LLM workflows, prompt engineering,
+                  RAG, vector embeddings, and
+                  agentic AI systems.
                 </p>
               </div>
             </div>

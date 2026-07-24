@@ -107,7 +107,7 @@ const Experience = () => {
           <div
             className="
               absolute
-              left-4
+              left-[13px]
               top-0
               w-[2px]
               h-full

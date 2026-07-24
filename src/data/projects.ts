@@ -4,7 +4,7 @@ export const projects = [
     title: "Real-Time Messaging App",
 
     description:
-      "Messaging platform with chat workflows, backend communication APIs, dynamic state handling, and responsive user interfaces.",
+      "Real-time bidirectional messaging app with secure JWT authentication, Socket.IO communication, a responsive React frontend, and a scalable NestJS/PostgreSQL backend.",
 
     image: "/projects/messagingapp.png",
 
@@ -15,11 +15,11 @@ export const projects = [
       "https://messaging-app-two-psi.vercel.app/",
 
     tech: [
+      "NestJS",
       "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Messaging",
+      "PostgreSQL",
+      "Socket.IO",
+      "JWT",
     ],
   },
 
@@ -47,24 +47,25 @@ export const projects = [
   },
 
   {
-    title: "File Upload Management System",
+    title: "File Uploader & Dashboard App",
 
     description:
-      "File upload and storage management application with upload workflows, backend handling, and responsive modern UI.",
+      "Secure file management platform with role-based access control, Cloudinary uploads, Supabase authentication, REST APIs, and a React admin dashboard for file and user-role management.",
 
     image: "/projects/file-upload.png",
 
     github:
-      "https://github.com/manoj13196/File_Uploader_Odin",
+      "https://github.com/manoj13196/File_Uploader",
 
     live:
       "https://file-uploader-three-rust.vercel.app/",
 
     tech: [
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "File Uploads",
+      "NestJS",
+      "React",
+      "PostgreSQL",
+      "Supabase",
+      "Cloudinary",
       "REST APIs",
     ],
   },

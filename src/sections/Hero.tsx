@@ -7,11 +7,14 @@ const Hero = () => {
       id="home"
       className="
         relative
+        min-h-screen
         overflow-x-hidden
-        pt-24
-        pb-20
-        md:pt-28
-        md:pb-24
+        flex
+        items-center
+        pt-20
+        pb-16
+        md:pt-24
+        md:pb-20
       "
     >
       {/* Background Glow */}
@@ -39,15 +42,15 @@ const Hero = () => {
 
       <div
         className="
-          max-w-6xl
+          max-w-[92rem]
           mx-auto
           section-padding
           relative
           z-10
           grid
-          md:grid-cols-2
-          gap-10
-          lg:gap-14
+          md:grid-cols-[1fr_0.78fr]
+          gap-8
+          lg:gap-10
           items-center
           w-full
         "
@@ -68,24 +71,24 @@ const Hero = () => {
               text-sm
             "
           >
-            Data Engineer • AI Builder
+            Software Developer - Data Engineer
           </p>
 
           <h1
             className="
-              text-[clamp(2.25rem,8vw,3.75rem)]
-              md:text-[clamp(3rem,4.8vw,4.5rem)]
+              text-[clamp(2rem,7vw,3.25rem)]
+              md:text-[clamp(2.5rem,3.7vw,3.45rem)]
               font-black
               leading-[1.05]
             "
           >
-            Building
+            Where
             <span className="gradient-text">
               {" "}
-              AI-Powered
+              Data
             </span>
             <br />
-            Data Systems
+            Meets Engineering
           </h1>
 
           <p
@@ -98,10 +101,10 @@ const Hero = () => {
               max-w-xl
             "
           >
-            I build scalable data pipelines,
-            AI analytics dashboards,
-            Agentic AI workflows,
-            and modern backend systems.
+            Building scalable data pipelines,
+            incremental ETL workflows, and validated
+            data integrations across SFTP, APIs,
+            PostgreSQL, MongoDB, and orchestration tools.
           </p>
 
           {/* BUTTONS */}
@@ -171,6 +174,7 @@ const Hero = () => {
 
             <a
               href="https://www.linkedin.com/in/manoj13196/"
+              target="_blank"
               className="
                 text-2xl
                 hover:text-blue-400
@@ -192,13 +196,41 @@ const Hero = () => {
             relative
             flex
             justify-center
+            md:justify-center
+            items-center
+            md:-translate-x-[5%]
           "
         >
           <div
             className="
-              w-[clamp(15rem,34vw,18rem)]
+              data-orbit
+              hidden
+              lg:block
+              absolute
+              right-[-0.5rem]
+              top-[52%]
+              h-[17rem]
+              w-[17rem]
+              -translate-y-1/2
+              opacity-70
+              z-0
+            "
+            aria-hidden="true"
+          >
+            <div className="data-ring" />
+            <div className="data-node data-node-one">Python</div>
+            <div className="data-node data-node-two">SQL</div>
+            <div className="data-node data-node-three">ETL</div>
+            <div className="data-node data-node-four">Airflow</div>
+            <div className="data-node data-node-five">DLT</div>
+            <div className="data-node data-node-six">Kafka</div>
+          </div>
+
+          <div
+            className="
+              w-[clamp(13rem,25vw,18rem)]
               aspect-square
-              md:w-[clamp(16rem,26vw,20rem)]
+              md:w-[clamp(15rem,23vw,20rem)]
               rounded-full
               bg-gradient-to-br
               from-blue-500
@@ -207,56 +239,91 @@ const Hero = () => {
               opacity-30
               blur-3xl
               absolute
+              z-0
             "
           />
 
           <div
             className="
               relative
-              w-[clamp(14rem,70vw,16rem)]
+              z-10
+              w-[min(70vw,16rem)]
               aspect-square
-              md:w-[clamp(15rem,24vw,19rem)]
-              rounded-[28px]
+              md:w-[min(23vw,18rem)]
+              rounded-full
               border
-              border-white/10
-              bg-white/5
-              backdrop-blur-xl
-              flex
-              items-center
-              justify-center
-              text-center
-              p-8
+              border-white/15
+              bg-white/[0.04]
+              backdrop-blur-md
+              overflow-hidden
+              shadow-[0_0_70px_rgba(96,165,250,0.18)]
+              transition
+              duration-500
+              hover:-translate-y-1
+              hover:scale-[1.02]
+              hover:border-blue-300/30
             "
           >
-            <div>
-              <h2
-                className="
-                  text-3xl
-                  font-bold
-                  gradient-text
-                "
-              >
-                AI + DE
-              </h2>
+            <img
+              src="/images/Manoj_Profile_image.png"
+              alt="Manoj Sai"
+              className="
+                h-full
+                w-full
+                object-cover
+                object-center
+              "
+            />
 
-              <p
-                className="
-                  mt-4
-                  text-gray-300
-                  text-sm
-                  md:text-base
-                  leading-relaxed
-                "
-              >
-                Creating intelligent analytics
-                systems, ETL pipelines,
-                RAG workflows, and scalable
-                engineering solutions.
-              </p>
-            </div>
+            <div
+              className="
+                absolute
+                inset-0
+                bg-gradient-to-t
+                from-[#050816]/25
+                via-transparent
+                to-transparent
+                pointer-events-none
+              "
+            />
           </div>
         </motion.div>
       </div>
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          inset-x-0
+          bottom-10
+          z-0
+          hidden
+          h-10
+          md:block
+        "
+        aria-hidden="true"
+      >
+        <div className="hero-data-stream">
+          <span />
+          <span />
+          <span />
+        </div>
+      </div>
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          inset-x-0
+          bottom-0
+          h-32
+          bg-gradient-to-b
+          from-transparent
+          via-[#050816]/70
+          to-[#050816]
+        "
+        aria-hidden="true"
+      />
     </section>
   );
 };

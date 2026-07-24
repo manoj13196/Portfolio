@@ -22,7 +22,7 @@ const Navbar = () => {
         className="
           max-w-7xl
           mx-auto
-          px-6
+          px-8
           py-3
           flex
           items-center
@@ -32,12 +32,12 @@ const Navbar = () => {
         <a
             href="#home"
             className="
-                text-xl
+                text-2xl
                 font-bold
                 gradient-text
             "
             >
-            Manoj Sai
+            Manoj Sai Akaramsetti
             </a>
 
         <div

@@ -81,24 +81,10 @@ const Skills = () => {
           "
         >
           {skills.map((skill, index) => (
-            <motion.div
+            <div
               key={skill}
-              initial={{
-                opacity: 0,
-                y: 40,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                duration: 0.5,
-                delay: index * 0.05,
-              }}
-              viewport={{ once: true }}
-              whileHover={{
-                y: -10,
-                scale: 1.03,
+              style={{
+                transitionDelay: `${Math.min(index * 12, 180)}ms`,
               }}
               className="
                 p-4
@@ -109,7 +95,11 @@ const Skills = () => {
                 backdrop-blur-xl
                 text-center
                 hover:border-blue-400/40
+                hover:-translate-y-1
+                hover:bg-white/10
                 transition
+                duration-300
+                ease-out
                 cursor-pointer
               "
             >
@@ -121,7 +111,7 @@ const Skills = () => {
               >
                 {skill}
               </h3>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

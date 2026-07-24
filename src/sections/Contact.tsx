@@ -88,10 +88,10 @@ const Contact = () => {
               leading-tight
             "
           >
-            Let’s Build
+            Let's Build
             <span className="gradient-text">
               {" "}
-              Something Amazing
+              Something Useful
             </span>
           </h2>
 
@@ -105,11 +105,10 @@ const Contact = () => {
               leading-relaxed
             "
           >
-            Interested in collaborating,
-            building AI systems,
-            scalable data platforms,
-            or analytics solutions?
-            Let’s connect.
+            Interested in backend systems,
+            ETL pipelines, API integrations,
+            AI automation, or analytics workflows?
+            Let's connect.
           </p>
 
           {/* BUTTONS */}

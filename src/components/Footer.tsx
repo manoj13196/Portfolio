@@ -10,7 +10,7 @@ const Footer = () => {
       "
     >
       <p>
-        © 2026 Manoj Sai.
+        (c) 2026 Manoj Sai Akaramsetti.
         Built with React, Tailwind,
         and Framer Motion.
       </p>
