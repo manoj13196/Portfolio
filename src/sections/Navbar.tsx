@@ -23,7 +23,7 @@ const Navbar = () => {
           max-w-7xl
           mx-auto
           px-6
-          py-4
+          py-3
           flex
           items-center
           justify-between
@@ -32,7 +32,7 @@ const Navbar = () => {
         <a
             href="#home"
             className="
-                text-2xl
+                text-xl
                 font-bold
                 gradient-text
             "
@@ -45,7 +45,7 @@ const Navbar = () => {
                 hidden
                 md:flex
                 items-center
-                gap-8
+                gap-6
                 text-sm
                 text-gray-300
             "

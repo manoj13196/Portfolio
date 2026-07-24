@@ -11,7 +11,7 @@ import Skills from "./sections/Skills";
 
 function App() {
   return (
-    <div className="bg-[#050816] text-white overflow-hidden relative">
+    <div className="bg-[#050816] text-white overflow-x-hidden relative">
       <BackgroundEffects />
 
       <Navbar />

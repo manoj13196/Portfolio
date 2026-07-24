@@ -15,7 +15,7 @@ const Contact = () => {
       id="contact"
       className="
         relative
-        py-32
+        py-24
         section-padding
       "
     >
@@ -26,8 +26,8 @@ const Contact = () => {
           absolute
           bottom-0
           right-0
-          w-[350px]
-          h-[350px]
+          w-[280px]
+          h-[280px]
           bg-blue-500/20
           blur-3xl
           rounded-full
@@ -56,13 +56,13 @@ const Contact = () => {
           }}
           viewport={{ once: true }}
           className="
-            rounded-[40px]
+            rounded-[28px]
             border
             border-white/10
             bg-white/5
             backdrop-blur-xl
-            p-10
-            md:p-16
+            p-8
+            md:p-12
             text-center
           "
         >
@@ -73,7 +73,8 @@ const Contact = () => {
               uppercase
               tracking-[4px]
               text-blue-400
-              mb-4
+              mb-3
+              text-sm
             "
           >
             Contact
@@ -81,8 +82,8 @@ const Contact = () => {
 
           <h2
             className="
-              text-4xl
-              md:text-6xl
+              text-3xl
+              md:text-4xl
               font-black
               leading-tight
             "
@@ -96,9 +97,9 @@ const Contact = () => {
 
           <p
             className="
-              mt-8
+              mt-5
               text-gray-400
-              text-lg
+              text-base
               max-w-2xl
               mx-auto
               leading-relaxed
@@ -118,8 +119,8 @@ const Contact = () => {
               flex
               flex-wrap
               justify-center
-              gap-5
-              mt-12
+              gap-4
+              mt-8
             "
           >
             {/* EMAIL */}
@@ -130,16 +131,16 @@ const Contact = () => {
                 flex
                 items-center
                 gap-3
-                px-7
-                py-4
-                rounded-2xl
+                px-5
+                py-3
+                rounded-xl
                 bg-blue-500
                 hover:bg-blue-600
                 transition
                 font-semibold
               "
             >
-              <MdEmail className="text-2xl" />
+              <MdEmail className="text-xl" />
 
               Email Me
             </a>
@@ -153,9 +154,9 @@ const Contact = () => {
                 flex
                 items-center
                 gap-3
-                px-7
-                py-4
-                rounded-2xl
+                px-5
+                py-3
+                rounded-xl
                 border
                 border-white/10
                 bg-white/5
@@ -164,7 +165,7 @@ const Contact = () => {
                 font-semibold
               "
             >
-              <FaGithub className="text-2xl" />
+              <FaGithub className="text-xl" />
 
               GitHub
             </a>
@@ -178,9 +179,9 @@ const Contact = () => {
                 flex
                 items-center
                 gap-3
-                px-7
-                py-4
-                rounded-2xl
+                px-5
+                py-3
+                rounded-xl
                 border
                 border-white/10
                 bg-white/5
@@ -189,7 +190,7 @@ const Contact = () => {
                 font-semibold
               "
             >
-              <FaLinkedin className="text-2xl" />
+              <FaLinkedin className="text-xl" />
 
               LinkedIn
             </a>

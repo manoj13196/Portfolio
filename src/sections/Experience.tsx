@@ -8,7 +8,7 @@ const Experience = () => {
       id="experience"
       className="
         relative
-        py-32
+        py-24
         section-padding
       "
     >
@@ -57,7 +57,8 @@ const Experience = () => {
               uppercase
               tracking-[4px]
               text-blue-400
-              mb-4
+              mb-3
+              text-sm
             "
           >
             Career Journey
@@ -65,8 +66,8 @@ const Experience = () => {
 
           <h2
             className="
-              text-4xl
-              md:text-5xl
+              text-3xl
+              md:text-4xl
               font-black
             "
           >
@@ -79,11 +80,11 @@ const Experience = () => {
 
           <p
             className="
-              mt-6
+              mt-4
               text-gray-400
               max-w-2xl
               mx-auto
-              text-lg
+              text-base
             "
           >
             My experience building scalable
@@ -97,7 +98,7 @@ const Experience = () => {
 
         <div
           className="
-            mt-24
+            mt-16
             relative
           "
         >
@@ -116,7 +117,7 @@ const Experience = () => {
 
           {/* ITEMS */}
 
-          <div className="space-y-16">
+          <div className="space-y-12">
             {experience.map((item, index) => (
               <motion.div
                 key={index}
@@ -135,7 +136,7 @@ const Experience = () => {
                 viewport={{ once: true }}
                 className="
                   relative
-                  pl-16
+                  pl-14
                 "
               >
                 {/* DOT */}
@@ -145,8 +146,8 @@ const Experience = () => {
                     absolute
                     left-0
                     top-2
-                    w-8
-                    h-8
+                    w-7
+                    h-7
                     rounded-full
                     bg-gradient-to-br
                     from-blue-500
@@ -160,8 +161,8 @@ const Experience = () => {
 
                 <div
                   className="
-                    p-8
-                    rounded-[32px]
+                    p-6
+                    rounded-2xl
                     border
                     border-white/10
                     bg-white/5
@@ -185,7 +186,7 @@ const Experience = () => {
                     <div>
                       <h3
                         className="
-                          text-2xl
+                          text-xl
                           font-bold
                         "
                       >
@@ -224,10 +225,10 @@ const Experience = () => {
 
                   <p
                     className="
-                      mt-6
+                      mt-5
                       text-gray-400
                       leading-relaxed
-                      text-lg
+                      text-base
                     "
                   >
                     {item.description}
@@ -239,22 +240,22 @@ const Experience = () => {
                     className="
                       flex
                       flex-wrap
-                      gap-3
-                      mt-8
+                      gap-2
+                      mt-6
                     "
                   >
                     {item.tech.map((tech) => (
                       <span
                         key={tech}
                         className="
-                          px-4
-                          py-2
+                          px-3
+                          py-1.5
                           rounded-full
                           bg-purple-500/10
                           border
                           border-purple-400/20
                           text-purple-300
-                          text-sm
+                          text-xs
                         "
                       >
                         {tech}

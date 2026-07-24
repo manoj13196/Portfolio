@@ -7,10 +7,11 @@ const Hero = () => {
       id="home"
       className="
         relative
-        min-h-screen
-        flex
-        items-center
-        overflow-hidden
+        overflow-x-hidden
+        pt-24
+        pb-20
+        md:pt-28
+        md:pb-24
       "
     >
       {/* Background Glow */}
@@ -38,7 +39,7 @@ const Hero = () => {
 
       <div
         className="
-          max-w-7xl
+          max-w-6xl
           mx-auto
           section-padding
           relative
@@ -46,7 +47,9 @@ const Hero = () => {
           grid
           md:grid-cols-2
           gap-10
+          lg:gap-14
           items-center
+          w-full
         "
       >
         {/* LEFT CONTENT */}
@@ -59,9 +62,10 @@ const Hero = () => {
           <p
             className="
               text-blue-400
-              mb-4
+              mb-3
               tracking-widest
               uppercase
+              text-sm
             "
           >
             Data Engineer • AI Builder
@@ -69,10 +73,10 @@ const Hero = () => {
 
           <h1
             className="
-              text-5xl
-              md:text-7xl
+              text-[clamp(2.25rem,8vw,3.75rem)]
+              md:text-[clamp(3rem,4.8vw,4.5rem)]
               font-black
-              leading-tight
+              leading-[1.05]
             "
           >
             Building
@@ -86,9 +90,10 @@ const Hero = () => {
 
           <p
             className="
-              mt-6
+              mt-5
               text-gray-400
-              text-lg
+              text-base
+              md:text-base
               leading-relaxed
               max-w-xl
             "
@@ -106,15 +111,15 @@ const Hero = () => {
               flex
               flex-wrap
               gap-4
-              mt-10
+              mt-7
             "
           >
             <a
               href="#projects"
               className="
-                px-7
-                py-4
-                rounded-2xl
+                px-6
+                py-3
+                rounded-xl
                 bg-blue-500
                 hover:bg-blue-600
                 transition
@@ -128,9 +133,9 @@ const Hero = () => {
               href="/resume/resume.pdf"
               target="_blank"
               className="
-                px-7
-                py-4
-                rounded-2xl
+                px-6
+                py-3
+                rounded-xl
                 border
                 border-white/20
                 hover:bg-white/10
@@ -149,14 +154,14 @@ const Hero = () => {
               flex
               items-center
               gap-5
-              mt-10
+              mt-7
             "
           >
             <a
               href="https://github.com/manoj13196"
               target="_blank"
               className="
-                text-3xl
+                text-2xl
                 hover:text-blue-400
                 transition
               "
@@ -167,7 +172,7 @@ const Hero = () => {
             <a
               href="https://www.linkedin.com/in/manoj13196/"
               className="
-                text-3xl
+                text-2xl
                 hover:text-blue-400
                 transition
               "
@@ -191,10 +196,9 @@ const Hero = () => {
         >
           <div
             className="
-              w-[320px]
-              h-[320px]
-              md:w-[420px]
-              md:h-[420px]
+              w-[clamp(15rem,34vw,18rem)]
+              aspect-square
+              md:w-[clamp(16rem,26vw,20rem)]
               rounded-full
               bg-gradient-to-br
               from-blue-500
@@ -209,11 +213,10 @@ const Hero = () => {
           <div
             className="
               relative
-              w-[300px]
-              h-[300px]
-              md:w-[400px]
-              md:h-[400px]
-              rounded-[40px]
+              w-[clamp(14rem,70vw,16rem)]
+              aspect-square
+              md:w-[clamp(15rem,24vw,19rem)]
+              rounded-[28px]
               border
               border-white/10
               bg-white/5
@@ -222,13 +225,13 @@ const Hero = () => {
               items-center
               justify-center
               text-center
-              p-10
+              p-8
             "
           >
             <div>
               <h2
                 className="
-                  text-4xl
+                  text-3xl
                   font-bold
                   gradient-text
                 "
@@ -240,6 +243,8 @@ const Hero = () => {
                 className="
                   mt-4
                   text-gray-300
+                  text-sm
+                  md:text-base
                   leading-relaxed
                 "
               >

@@ -6,7 +6,7 @@ const Skills = () => {
     <section
       id="skills"
       className="
-        py-32
+        py-24
         section-padding
         relative
       "
@@ -31,7 +31,8 @@ const Skills = () => {
               uppercase
               tracking-[4px]
               text-blue-400
-              mb-4
+              mb-3
+              text-sm
             "
           >
             Tech Stack
@@ -39,8 +40,8 @@ const Skills = () => {
 
           <h2
             className="
-              text-4xl
-              md:text-5xl
+              text-3xl
+              md:text-4xl
               font-black
             "
           >
@@ -53,11 +54,11 @@ const Skills = () => {
 
           <p
             className="
-              mt-6
+              mt-4
               text-gray-400
               max-w-2xl
               mx-auto
-              text-lg
+              text-base
             "
           >
             Technologies I use to build
@@ -71,12 +72,12 @@ const Skills = () => {
 
         <div
           className="
-            mt-20
+            mt-14
             grid
             grid-cols-2
             md:grid-cols-3
             lg:grid-cols-4
-            gap-6
+            gap-4
           "
         >
           {skills.map((skill, index) => (
@@ -100,8 +101,8 @@ const Skills = () => {
                 scale: 1.03,
               }}
               className="
-                p-6
-                rounded-3xl
+                p-4
+                rounded-2xl
                 border
                 border-white/10
                 bg-white/5
@@ -114,7 +115,7 @@ const Skills = () => {
             >
               <h3
                 className="
-                  text-xl
+                  text-base
                   font-semibold
                 "
               >

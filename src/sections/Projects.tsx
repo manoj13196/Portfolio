@@ -9,7 +9,7 @@ const Projects = () => {
     <section
       id="projects"
       className="
-        py-32
+        py-24
         section-padding
         relative
       "
@@ -57,8 +57,8 @@ const Projects = () => {
 
           <h2
             className="
-              text-4xl
-              md:text-5xl
+              text-3xl
+              md:text-4xl
               font-black
             "
           >
@@ -71,11 +71,11 @@ const Projects = () => {
 
           <p
             className="
-              mt-6
+              mt-4
               text-gray-400
               max-w-2xl
               mx-auto
-              text-lg
+              text-base
             "
           >
             A collection of AI systems,
@@ -89,11 +89,11 @@ const Projects = () => {
 
         <div
           className="
-            mt-20
+            mt-14
             grid
             md:grid-cols-2
             lg:grid-cols-3
-            gap-8
+            gap-6
           "
         >
           {projects.map((project, index) => (
@@ -119,7 +119,7 @@ const Projects = () => {
                 group
                 relative
                 overflow-hidden
-                rounded-[32px]
+                rounded-2xl
                 border
                 border-white/10
                 bg-white/5
@@ -130,7 +130,7 @@ const Projects = () => {
 
               <div
                 className="
-                  h-[220px]
+                  h-[180px]
                   overflow-hidden
                 "
               >
@@ -150,10 +150,10 @@ const Projects = () => {
 
               {/* CONTENT */}
 
-              <div className="p-8">
+              <div className="p-6">
                 <h3
                   className="
-                    text-2xl
+                    text-xl
                     font-bold
                   "
                 >
@@ -162,8 +162,9 @@ const Projects = () => {
 
                 <p
                   className="
-                    mt-4
+                    mt-3
                     text-gray-400
+                    text-sm
                     leading-relaxed
                   "
                 >
@@ -176,18 +177,18 @@ const Projects = () => {
                   className="
                     flex
                     flex-wrap
-                    gap-3
-                    mt-6
+                    gap-2
+                    mt-5
                   "
                 >
                   {project.tech.map((item) => (
                     <span
                       key={item}
                       className="
-                        px-4
-                        py-2
+                        px-3
+                        py-1.5
                         rounded-full
-                        text-sm
+                        text-xs
                         bg-blue-500/10
                         border
                         border-blue-400/20
@@ -206,7 +207,8 @@ const Projects = () => {
                     flex
                     items-center
                     gap-5
-                    mt-8
+                    mt-6
+                    text-sm
                   "
                 >
                   <a

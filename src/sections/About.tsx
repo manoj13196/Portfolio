@@ -6,7 +6,7 @@ const About = () => {
       id="about"
       className="
         relative
-        py-32
+        py-24
         section-padding
       "
     >
@@ -16,7 +16,7 @@ const About = () => {
           mx-auto
           grid
           md:grid-cols-2
-          gap-16
+          gap-12
           items-center
         "
       >
@@ -33,7 +33,8 @@ const About = () => {
               text-blue-400
               uppercase
               tracking-[4px]
-              mb-4
+              mb-3
+              text-sm
             "
           >
             About Me
@@ -41,8 +42,8 @@ const About = () => {
 
           <h2
             className="
-              text-4xl
-              md:text-5xl
+              text-3xl
+              md:text-4xl
               font-black
               leading-tight
             "
@@ -57,9 +58,9 @@ const About = () => {
 
           <p
             className="
-              mt-8
+              mt-6
               text-gray-400
-              text-lg
+              text-base
               leading-relaxed
             "
           >
@@ -73,7 +74,7 @@ const About = () => {
             className="
               mt-6
               text-gray-400
-              text-lg
+              text-base
               leading-relaxed
             "
           >
@@ -86,7 +87,7 @@ const About = () => {
 
           <div
             className="
-              mt-10
+              mt-8
               grid
               grid-cols-2
               gap-6
@@ -94,8 +95,8 @@ const About = () => {
           >
             <div
               className="
-                p-6
-                rounded-3xl
+                p-5
+                rounded-2xl
                 bg-white/5
                 border
                 border-white/10
@@ -103,7 +104,7 @@ const About = () => {
             >
               <h3
                 className="
-                  text-4xl
+                  text-3xl
                   font-bold
                   gradient-text
                 "
@@ -118,8 +119,8 @@ const About = () => {
 
             <div
               className="
-                p-6
-                rounded-3xl
+                p-5
+                rounded-2xl
                 bg-white/5
                 border
                 border-white/10
@@ -127,7 +128,7 @@ const About = () => {
             >
               <h3
                 className="
-                  text-4xl
+                  text-3xl
                   font-bold
                   gradient-text
                 "
@@ -167,8 +168,8 @@ const About = () => {
           <div
             className="
               relative
-              p-10
-              rounded-[40px]
+              p-8
+              rounded-[28px]
               border
               border-white/10
               bg-white/5
@@ -177,17 +178,17 @@ const About = () => {
           >
             <h3
               className="
-                text-3xl
+                text-2xl
                 font-bold
-                mb-8
+                mb-6
               "
             >
               What I Focus On
             </h3>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               <div>
-                <h4 className="font-semibold text-xl">
+                <h4 className="font-semibold text-lg">
                   Data Engineering
                 </h4>
 
@@ -199,7 +200,7 @@ const About = () => {
               </div>
 
               <div>
-                <h4 className="font-semibold text-xl">
+                <h4 className="font-semibold text-lg">
                   AI Analytics
                 </h4>
 
@@ -211,7 +212,7 @@ const About = () => {
               </div>
 
               <div>
-                <h4 className="font-semibold text-xl">
+                <h4 className="font-semibold text-lg">
                   Backend Systems
                 </h4>
 
