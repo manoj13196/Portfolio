@@ -1,0 +1,270 @@
+import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+
+import { projects } from "../data/projects";
+
+const Projects = () => {
+  return (
+    <section
+      id="projects"
+      className="
+        py-32
+        section-padding
+        relative
+      "
+    >
+      {/* BACKGROUND GLOW */}
+
+      <div
+        className="
+          absolute
+          top-20
+          right-0
+          w-[300px]
+          h-[300px]
+          bg-purple-500/20
+          blur-3xl
+          rounded-full
+        "
+      />
+
+      <div
+        className="
+          max-w-7xl
+          mx-auto
+          relative
+          z-10
+        "
+      >
+        {/* HEADER */}
+
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 60,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.8,
+          }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+
+          <h2
+            className="
+              text-4xl
+              md:text-5xl
+              font-black
+            "
+          >
+            Featured
+            <span className="gradient-text">
+              {" "}
+              Projects
+            </span>
+          </h2>
+
+          <p
+            className="
+              mt-6
+              text-gray-400
+              max-w-2xl
+              mx-auto
+              text-lg
+            "
+          >
+            A collection of AI systems,
+            data engineering workflows,
+            analytics platforms,
+            and scalable backend solutions.
+          </p>
+        </motion.div>
+
+        {/* PROJECTS GRID */}
+
+        <div
+          className="
+            mt-20
+            grid
+            md:grid-cols-2
+            lg:grid-cols-3
+            gap-8
+          "
+        >
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.title}
+              initial={{
+                opacity: 0,
+                y: 60,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.15,
+              }}
+              viewport={{ once: true }}
+              whileHover={{
+                y: -12,
+              }}
+              className="
+                group
+                relative
+                overflow-hidden
+                rounded-[32px]
+                border
+                border-white/10
+                bg-white/5
+                backdrop-blur-xl
+              "
+            >
+              {/* IMAGE */}
+
+              <div
+                className="
+                  h-[220px]
+                  overflow-hidden
+                "
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="
+                    w-full
+                    h-full
+                    object-cover
+                    group-hover:scale-110
+                    transition
+                    duration-700
+                  "
+                />
+              </div>
+
+              {/* CONTENT */}
+
+              <div className="p-8">
+                <h3
+                  className="
+                    text-2xl
+                    font-bold
+                  "
+                >
+                  {project.title}
+                </h3>
+
+                <p
+                  className="
+                    mt-4
+                    text-gray-400
+                    leading-relaxed
+                  "
+                >
+                  {project.description}
+                </p>
+
+                {/* TECH TAGS */}
+
+                <div
+                  className="
+                    flex
+                    flex-wrap
+                    gap-3
+                    mt-6
+                  "
+                >
+                  {project.tech.map((item) => (
+                    <span
+                      key={item}
+                      className="
+                        px-4
+                        py-2
+                        rounded-full
+                        text-sm
+                        bg-blue-500/10
+                        border
+                        border-blue-400/20
+                        text-blue-300
+                      "
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+
+                {/* LINKS */}
+
+                <div
+                  className="
+                    flex
+                    items-center
+                    gap-5
+                    mt-8
+                  "
+                >
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    className="
+                      flex
+                      items-center
+                      gap-2
+                      hover:text-blue-400
+                      transition
+                    "
+                  >
+                    <FaGithub />
+
+                    GitHub
+                  </a>
+
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    className="
+                      flex
+                      items-center
+                      gap-2
+                      hover:text-blue-400
+                      transition
+                    "
+                  >
+                    <FiExternalLink />
+
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+
+              {/* HOVER GRADIENT */}
+
+              <div
+                className="
+                  absolute
+                  inset-0
+                  opacity-0
+                  group-hover:opacity-100
+                  transition
+                  duration-500
+                  pointer-events-none
+                  bg-gradient-to-br
+                  from-blue-500/5
+                  to-purple-500/5
+                "
+              />
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
